@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Svelte 2 vs 3: Cheat Sheet</title>
+    <link rel="stylesheet" href="styles/prism.css" type="text/css" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
+  </head>
+  <body>
+    <script src="lib/prism.js"></script>
+    <header>
+      <img src="assets/svelte-horizontal.png" alt="Svelte 3" class="header-logo"/>
+    </header>
+    <main>
+      <h1>Svelte 2 vs 3: Cheat Sheet</h1>
+      <p class="intro">
+      This guide is a cheat sheet for using
+      <a href="https://svelte.dev">Svelte 3</a>. It
+      doesn't cover everything, but it should get you started! 
+      <br />PRs welcome at
+      <a href="https://github.com/sveltejs/svelte-upgrade"
+         >the GitHub repository</a
+       >
+      </p>
+
+XXX-DOC-XXX
+        <section aria-labelledby="section-action-identifier">
+          <h3 id="section-action-identifier">Action Identifier</h3>
+          <p> A description about action-identifier goes here... </p>
+          <div class="grid">
+            <div>
+              <h4>Svelte 2</h4>
+              <pre data-src="code/action-identifier/input.html"></pre>
+            </div>
+            <div>
+              <h4>Svelte 3</h4>
+              <pre data-src="code/action-identifier/output.html"></pre>
+            </div>
+          </div>
+        </section>
+
+    </main>
+  </body>
+</html>
