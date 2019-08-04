@@ -7,20 +7,20 @@ doc=""
   for section in `ls code`
   do
   temp="
-  <section aria-labelledby=\"section-${section}\">
-    <h3 id=\"section-${section}\">${section}</h3>
-    <p>A description about ${section} goes here...</p>
-    <div class=\"grid\">
-      <div>
-        <h4>Svelte 2</h4>
-        <pre data-src=\"code/${section}/input.html\"></pre>
-      </div>
-      <div>
-        <h4>Svelte 3</h4>
-        <pre data-src=\"code/${section}/output.html\"></pre>
-      </div>
-    </div>
-  </section>
+  <section aria-labelledby=\"section-${section}\">\n
+    <h3 id=\"section-${section}\">${section}</h3>\n
+    <p>A description about ${section} goes here...</p>\n
+    <div class=\"grid\">\n
+      <div>\n
+        <h4>Svelte 2</h4>\n
+        <pre data-src=\"code/${section}/input.html\"></pre>\n
+      </div>\n
+      <div>\n
+        <h4>Svelte 3</h4>\n
+        <pre data-src=\"code/${section}/output.html\"></pre>\n
+      </div>\n
+    </div>\n
+  </section>\n
   "
 doc="$doc$temp"
   done
