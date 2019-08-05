@@ -1,15 +1,14 @@
 #!/bin/sh
 main() {
 
-
-doc=""
+  doc=""
 
   for section in `ls code`
   do
   temp="
   <section aria-labelledby=\"section-${section}\">\n
     <h3 id=\"section-${section}\">${section}</h3>\n
-    <p>A description about ${section} goes here...</p>\n
+    $(cat "code/${section}/header.html")\n
     <div class=\"grid\">\n
       <div>\n
         <h4>Svelte 2</h4>\n
@@ -22,7 +21,7 @@ doc=""
     </div>\n
   </section>\n
   "
-doc="$doc$temp"
+  doc="$doc$temp"
   done
 
   # Concatenate files
